@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Interest Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <script>
+        function simpleInterestCalculator() {
+            // alert("Hello Abhi");
+            const amt = document.getElementById("amount").value;
+            const ir = document.getElementById("interestRate").value;
+            const tem = document.getElementById("time").value;
+
+            const SI = (parseInt(amt) * parseInt(ir) * parseInt(tem)) / 100;
+            const write0 = document.getElementById("finalAmount0");
+            write0.innerHTML = "Principal Amount : " + parseInt(amt);
+            const write1 = document.getElementById("finalAmount1");
+            write1.innerHTML = "Amount of interest : " + SI;
+            const write2 = document.getElementById("finalAmount2");
+            write2.innerHTML = "Total Amount : " + (SI + parseInt(amt));
+        }
+    </script>
+    <body>
+        <h1 id="heading">Simple Interest calculator</h1>
+        <div class="calculator">
+            <label>Enter Principal Amount : </label>
+            <input type="number" id="amount" placeholder="Amount" /><br /><br />
+            <label>Enter Rate of Interest : </label>
+            <input
+                type="number"
+                id="interestRate"
+                placeholder="Interest Rate"
+            /><br /><br />
+            <label>Enter Duration in Years : </label>
+            <input type="number" id="time" placeholder="Duration" /><br /><br />
+            <button onclick="simpleInterestCalculator()">
+                Calculate Final Amount
+            </button>
+        </div>
+        <h1 id="output">Output</h1>
+        <div class="outputBox">
+            <div id="finalAmount0"></div>
+            <div id="finalAmount1"></div>
+            <div id="finalAmount2"></div>
+        </div>
+    </body>
+</html>

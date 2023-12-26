@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#heading{
+    margin-top: 50px;
+    color: cadetblue;
+    text-align: center;
+}
+.calculator{
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin: 12px;
+    padding: 15px;
+    width: 380px;
+    height: 170px;
+    align-items:start;
+    margin-top: 30px;
+    margin-left: 560px;
+}
+.calculator label{
+    color: chocolate;
+    font-size: 20px;
+    font-weight: 500;
+}
+input{
+    color: black;
+    background-color:rgb(138, 165, 181);
+    font-size: 13px;
+    padding: 3px;
+    border: 2px solid rgb(43, 56, 27);
+    border-radius: 4px;
+}
+.calculator button{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 7px;
+    padding: 7px;
+    color: rgb(40, 69, 124);
+    background-color: darkgray;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-left: 85px;
+}
+#output{
+    margin-top: 50px;
+    color: cadetblue;
+    text-align: center;
+}
+.outputBox{
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin: 12px;
+    padding: 15px;
+    width: 380px;
+    height: 170px;
+    align-items:start;
+    margin-top: 30px;
+    margin-left: 560px;
+}
+#finalAmount0{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 15px;
+    color: rgb(86, 13, 27);
+}
+#finalAmount1{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: rgb(86, 13, 27);
+}
+#finalAmount2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: rgb(86, 13, 27);
+}
